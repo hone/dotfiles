@@ -19,6 +19,7 @@ set ruler " Ruler on
 set nu " Line numbers on
 set timeoutlen=300 " Time to wait after ESC
 set foldmethod=syntax " Allows folding of ruby syntax
+set foldlevel=1 " don't auto fold everything
 
 " Add recently accessed projects menu (project plugin)
 set viminfo^=!
