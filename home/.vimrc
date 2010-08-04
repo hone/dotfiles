@@ -143,6 +143,10 @@ map <leader>rg :silent call RailsScriptSearch(expand("<cword>"))<CR>:cc<CR>
 " search for the method definition of the word under the cursor
 map <leader>rd :silent call RailsScriptSearch(expand("'def .*<cword>'"))<CR>:cc<CR>
 
+" Fugitive
+map <leader>gs :Gstatus
+map <leader>gc :Gcommit
+
 let g:rubytest_in_quickfix = 0
 let g:rubytest_cmd_test = "screen -S foo -p test -X stuff 'ruby %p'"
 let g:rubytest_cmd_testcase = "screen -S foo -p test -X stuff \"ruby %p -n '/%c/'\""
