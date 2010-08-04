@@ -19,7 +19,7 @@ git_bundles = [
   "git://github.com/tsaleh/vim-supertab.git",
   "git://github.com/tsaleh/vim-tcomment.git",
   "git://github.com/vim-ruby/vim-ruby.git",
-  "git://github.com/wgibbs/vim-irblack.git"
+  "git://github.com/wincent/Command-T.git"
 ]
 
 vim_org_scripts = [

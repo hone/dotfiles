@@ -17,7 +17,7 @@ fi
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
-    export PATH="$HOME/bin:$HOME/Projects/oib/otherinbox-sproutcore/bin:$PATH"
+    export PATH="$HOME/bin:$PATH"
 export XTERM=xterm-256color
 fi
 
