@@ -51,9 +51,6 @@ set softtabstop=4
 set shiftwidth=4
 set cinoptions=>4
 
-" set line numbers
-set number
-
 " Backups & Files
 "set backup	" Enable creation of backup file
 "set backupdir=~/.vim/backups " Where backups will go
