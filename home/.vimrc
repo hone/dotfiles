@@ -144,8 +144,8 @@ map <leader>rg :silent call RailsScriptSearch(expand("<cword>"))<CR>:cc<CR>
 map <leader>rd :silent call RailsScriptSearch(expand("'def .*<cword>'"))<CR>:cc<CR>
 
 " Fugitive
-map <leader>gs :Gstatus
-map <leader>gc :Gcommit
+map <leader>gs :Gstatus<CR>
+map <leader>gc :Gcommit<CR>
 
 let g:rubytest_in_quickfix = 0
 let g:rubytest_cmd_test = "screen -S foo -p test -X stuff 'ruby %p'"
