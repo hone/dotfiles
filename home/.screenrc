@@ -18,3 +18,5 @@ defbce "on"
 # Default screens
 #screen -t vim			0
 #screen -t server		2	ssh me@myserver
+
+shell -bash
