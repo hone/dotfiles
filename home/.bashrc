@@ -168,3 +168,5 @@ bash_prompt() {
 
 bash_prompt
 unset bash_prompt
+
+alias dbundle='ruby -I ~/Projects/heroku_work/bundler/lib ~/Projects/heroku_work/bundler/bin/bundle'
