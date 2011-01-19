@@ -22,4 +22,4 @@ export XTERM=xterm-256color
 fi
 
 # rvm
-if [[ -s /home/hone/.rvm/scripts/rvm ]] ; then source /home/hone/.rvm/scripts/rvm ; fi
+if [[ -s "$HOME/.rvm/scripts/rvm" ]] ; then source "$HOME/.rvm/scripts/rvm" ; fi
