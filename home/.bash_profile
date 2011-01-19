@@ -1,1 +1,1 @@
-/home/hone/.profile
+source "$HOME/.profile"
