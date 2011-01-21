@@ -26,7 +26,7 @@ set viminfo^=!
 
 " Colors
 set t_Co=256 " 256 colors
-colorscheme molokai
+colorscheme molokai_csapprox
 
 " Change which file opens after executing :Rails command
 let g:rails_default_file='config/database.yml'
