@@ -21,7 +21,6 @@ if [ -d "$HOME/bin" ] ; then
 export XTERM=xterm-256color
 fi
 
-
 # bash completion for brew
 if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
