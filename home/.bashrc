@@ -172,7 +172,7 @@ unset bash_prompt
 alias dbundle='ruby -I ~/Projects/heroku_work/bundler/lib ~/Projects/heroku_work/bundler/bin/bundle'
 
 # bash completion for brew
-if [ which brew &> /dev/null ] && [ -f `brew --prefix`/etc/bash_completion ]; then
+if [ `which brew` ] && [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
 if [ -f /usr/local/Cellar/coreutils/8.7/aliases ]; then
