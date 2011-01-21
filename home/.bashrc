@@ -102,7 +102,7 @@ export JAVA_HOME="/usr/lib/jvm/java-6-sun/"
 export CLASSPATH="/opt/clojure/clojure.jar:/opt/clojure-contrib/clojure-contrib.jar:/opt/vimclojure/build/vimclojure.jar:$CLASSPATH"
 
 # rvm
-if [[ -s /home/hone/.rvm/scripts/rvm ]] ; then source /home/hone/.rvm/scripts/rvm ; fi
+if [[ -s "$HOME/.rvm/scripts/rvm" ]] ; then source "$HOME/.rvm/scripts/rvm" ; fi
 
 rvm gemset use heroku_work
 echo `ruby -v`

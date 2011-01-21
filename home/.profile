@@ -21,8 +21,6 @@ if [ -d "$HOME/bin" ] ; then
 export XTERM=xterm-256color
 fi
 
-# rvm
-if [[ -s "$HOME/.rvm/scripts/rvm" ]] ; then source "$HOME/.rvm/scripts/rvm" ; fi
 
 # bash completion for brew
 if [ -f `brew --prefix`/etc/bash_completion ]; then
