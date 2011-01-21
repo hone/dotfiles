@@ -24,4 +24,5 @@ fi
 # bash completion for brew
 if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
+  source /usr/local/Cellar/coreutils/8.7/aliases
 fi
