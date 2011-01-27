@@ -100,9 +100,9 @@ fi
 alias t="tree -L 1 -C -h"
 
 set -o vi
-export PATH="$HOME/bin:/opt/android-sdk-linux_86/tools:$PATH"
-export JAVA_HOME="/usr/lib/jvm/java-6-sun/"
-export CLASSPATH="/opt/clojure/clojure.jar:/opt/clojure-contrib/clojure-contrib.jar:/opt/vimclojure/build/vimclojure.jar:$CLASSPATH"
+#export PATH="$HOME/bin:/opt/android-sdk-linux_86/tools:$PATH"
+#export JAVA_HOME="/usr/lib/jvm/java-6-sun/"
+#export CLASSPATH="/opt/clojure/clojure.jar:/opt/clojure-contrib/clojure-contrib.jar:/opt/vimclojure/build/vimclojure.jar:$CLASSPATH"
 
 # rvm
 if [[ -s "$HOME/.rvm/scripts/rvm" ]] ; then source "$HOME/.rvm/scripts/rvm" ; fi
