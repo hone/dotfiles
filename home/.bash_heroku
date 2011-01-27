@@ -1,4 +1,5 @@
 export DOCBROWN_PATH="$HOME/Projects/heroku_work/docbrown";
+export HEROKU_HOST="heroku.com"
 # Change Heroku cloud context
 function cloudset {
   if [ "$1" != "" ]; then
@@ -6,7 +7,10 @@ function cloudset {
     export HEROKU_HOST="$1.herokudev.com"
   else
     echo "heroku.com"
-    unset HEROKU_HOST
+    export HEROKU_HOST="heroku.com"
   fi
 }
 alias db="BUNDLE_GEMFILE=$DOCBROWN_PATH/Gemfile $DOCBROWN_PATH/bin/docbrown"
+function hcl {
+  git clone git@$HEROKU_HOST:$1.git
+}
