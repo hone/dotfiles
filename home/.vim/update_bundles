@@ -34,7 +34,7 @@ vim_org_scripts = [
 require 'fileutils'
 require 'open-uri'
 
-bundles_dir = File.join(File.dirname(__FILE__), "bundle")
+bundles_dir = File.expand_path(File.join(File.dirname(__FILE__), "bundle"))
 
 FileUtils.mkdir(bundles_dir) unless File.exists?(bundles_dir)
 FileUtils.cd(bundles_dir)
@@ -47,6 +47,13 @@ git_bundles.each do |url|
   puts "  Unpacking #{url} into #{dir}"
   `git clone #{url} #{dir}`
   FileUtils.rm_rf(File.join(dir, ".git"))
+
+  if url == "git://github.com/wincent/Command-T.git"
+    puts '  Building Command T'
+    FileUtils.cd(dir)
+    `rake make`
+    FileUtils.cd(bundles_dir)
+  end
 end
 
 vim_org_scripts.each do |name, script_id, script_type|
