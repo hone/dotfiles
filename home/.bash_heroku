@@ -1,0 +1,12 @@
+export DOCBROWN_PATH="$HOME/Projects/heroku_work/docbrown";
+# Change Heroku cloud context
+function cloudset {
+  if [ "$1" != "" ]; then
+    echo "$1.herokudev.com"
+    export HEROKU_HOST="$1.herokudev.com"
+  else
+    echo "heroku.com"
+    unset HEROKU_HOST
+  fi
+}
+alias db="BUNDLE_GEMFILE=$DOCBROWN_PATH/Gemfile $DOCBROWN_PATH/bin/docbrown"
