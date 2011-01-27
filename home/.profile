@@ -20,6 +20,3 @@ if [ -d "$HOME/bin" ] ; then
     export PATH="$HOME/bin:$PATH"
 	export XTERM=xterm-256color
 fi
-
-# heroku aliases
-source $HOME/.bash_heroku

@@ -69,6 +69,9 @@ esac
 #    . ~/.bash_aliases
 #fi
 
+# heroku aliases
+source $HOME/.bash_heroku
+
 # enable color support of ls and also add handy aliases
 if [ "$TERM" != "dumb" ] && [ -x /usr/bin/dircolors ]; then
     eval "`dircolors -b`"
