@@ -21,14 +21,14 @@ git_bundles = [
   "git://github.com/vim-ruby/vim-ruby.git",
   "git://github.com/wincent/Command-T.git",
   "git://github.com/tpope/vim-rake.git",
-  "git://github.com/godlygeek/tabular.git"
+  "git://github.com/godlygeek/tabular.git",
+  "git://github.com/godlygeek/csapprox.git",
+  "git://github.com/mattn/gist-vim.git",
+  "git://github.com/henrik/vim-indexed-search.git"
 ]
 
 vim_org_scripts = [
-  ["IndexedSearch", "7062",  "plugin"],
-  ["gist",          "12732", "plugin"],
-  ["jquery",        "12107", "syntax"],
-  ["CSApprox",      "10336", "zip"]
+  ["jquery",        "12107", "syntax"]
 ]
 
 require 'fileutils'
