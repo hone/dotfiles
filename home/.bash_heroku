@@ -15,3 +15,9 @@ alias db="BUNDLE_GEMFILE=$DOCBROWN_PATH/Gemfile $DOCBROWN_PATH/bin/docbrown"
 function hcl {
   git clone git@$HEROKU_HOST:$1.git
 }
+function coladd {
+  db collaborator:add $1 $HEROKU_EMAIL
+}
+function colrem {
+  db collaborator:remove $1 $HEROKU_EMAIL
+}
