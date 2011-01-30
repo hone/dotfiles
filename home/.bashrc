@@ -104,6 +104,10 @@ set -o vi
 #export JAVA_HOME="/usr/lib/jvm/java-6-sun/"
 #export CLASSPATH="/opt/clojure/clojure.jar:/opt/clojure-contrib/clojure-contrib.jar:/opt/vimclojure/build/vimclojure.jar:$CLASSPATH"
 
+# clojure
+export CLOJURE_EXT=$HOME/.clojure/ext/
+export PATH=$PATH:$HOME/.clojure/bin/
+
 # rvm
 if [[ -s "$HOME/.rvm/scripts/rvm" ]] ; then source "$HOME/.rvm/scripts/rvm" ; fi
 

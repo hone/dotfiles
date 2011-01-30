@@ -1,0 +1,2 @@
+source $HOME/Projects/clojure-contrib/launchers/bash/clj-env-dir
+exec $JAVA $OPTS jline.ConsoleRunner $MAIN "$@"
