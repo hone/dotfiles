@@ -1,5 +1,6 @@
 export DOCBROWN_PATH="$HOME/Projects/heroku_work/docbrown";
 export HEROKU_HOST="heroku.com"
+export HEROKU_EMAIL='terence@heroku.com'
 # Change Heroku cloud context
 function cloudset {
   if [ "$1" != "" ]; then
