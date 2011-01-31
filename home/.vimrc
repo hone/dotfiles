@@ -71,7 +71,7 @@ augroup END
 
 augroup filetypedetect
 	au! BufRead,BufNewFile *.rhtml      setfiletype eruby
-	au! BufRead,BufNewFile *.aspx		setfiletype html
+	au! BufRead,BufNewFile *.aspx       setfiletype html
 	au! BufRead,BufNewFile *.clj        setfiletype clojure
 augroup END
 
