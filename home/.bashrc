@@ -184,4 +184,5 @@ if [ `which brew` ] && [ -f `brew --prefix`/etc/bash_completion ]; then
 fi
 if [ -f /usr/local/Cellar/coreutils/8.7/aliases ]; then
   source /usr/local/Cellar/coreutils/8.7/aliases
+  alias ls='gls --color'
 fi
