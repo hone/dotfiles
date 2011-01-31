@@ -72,6 +72,7 @@ augroup END
 augroup filetypedetect
 	au! BufRead,BufNewFile *.rhtml      setfiletype eruby
 	au! BufRead,BufNewFile *.aspx		setfiletype html
+	au! BufRead,BufNewFile *.clj        setfiletype clojure
 augroup END
 
 " Diff Preview function
@@ -156,8 +157,5 @@ let g:rubytest_cmd_example = "screen -S foo -p test -X stuff \"spec --drb -c -f 
 
 " Clojure
 
-let vimclojure#NailgunClient = "/home/hone/.vim/bin/ng"
-let clj_want_gorilla = 1
-"let clj_highlight_builtins = 1
-"let clj_highlight_contrib = 1
-"let clj_paren_rainbow = 1
+let vimclojure#HighlightBuiltins=1  " Highlight Clojure's builtins
+let vimclojure#ParenRainbow=1       " Rainbow parentheses'!

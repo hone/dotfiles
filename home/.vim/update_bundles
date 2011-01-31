@@ -28,7 +28,8 @@ git_bundles = [
 ]
 
 vim_org_scripts = [
-  ["jquery",        "12107", "syntax"]
+  ["jquery",        "12107", "syntax"],
+  ["vimclojure",    "13986", "zip"]
 ]
 
 require 'fileutils'
