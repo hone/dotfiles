@@ -134,7 +134,7 @@ function __my_rvm_ruby_version {
   [ "$full" != "" ] && echo "$full "
 }
 
-bash_prompt() {
+function bash_prompt() {
   local NONE="\[\033[0m\]"    # unsets color to term's fg color
 
   # regular colors
@@ -170,11 +170,12 @@ bash_prompt() {
   local UC=$W                 # user's color
   [ $UID -eq "0" ] && UC=$R   # root's color
 
-  PS1="$B\$(__my_rvm_ruby_version)$Y\h$W:$EMY\w$EMW\$(__git_branch)$EMY\$(__git_dirty)${NONE} $ "
+  # heroku cloud
+
+  PS1="$B\$(__my_rvm_ruby_version)$Y\h $G$HEROKU_HOST$W:$EMY\w$EMW\$(__git_branch)$EMY\$(__git_dirty)${NONE} $ "
 }
 
 bash_prompt
-unset bash_prompt
 
 alias dbundle='ruby -I ~/Projects/heroku_work/bundler/lib ~/Projects/heroku_work/bundler/bin/bundle'
 

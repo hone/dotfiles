@@ -6,9 +6,11 @@ function cloudset {
   if [ "$1" != "" ]; then
     echo "$1.herokudev.com"
     export HEROKU_HOST="$1.herokudev.com"
+    bash_prompt
   else
     echo "heroku.com"
     export HEROKU_HOST="heroku.com"
+    bash_prompt
   fi
 }
 alias db="BUNDLE_GEMFILE=$DOCBROWN_PATH/Gemfile $DOCBROWN_PATH/bin/docbrown"
