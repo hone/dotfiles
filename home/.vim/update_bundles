@@ -24,7 +24,8 @@ git_bundles = [
   "git://github.com/godlygeek/tabular.git",
   "git://github.com/godlygeek/csapprox.git",
   "git://github.com/mattn/gist-vim.git",
-  "git://github.com/henrik/vim-indexed-search.git"
+  "git://github.com/henrik/vim-indexed-search.git",
+  "git://github.com/jpalardy/vim-slime.git"
 ]
 
 vim_org_scripts = [
