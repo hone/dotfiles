@@ -6,12 +6,16 @@ function cloudset {
   if [ "$1" != "" ]; then
     echo "$1.herokudev.com"
     export HEROKU_HOST="$1.herokudev.com"
-    bash_prompt
+    export ION_DOMAIN="ion-$1.heroku.com"
+    if [ "$1" == "staging" ]; then
+      export ION_DOMAIN="ion-staging.herokai.com"
+    fi
   else
     echo "heroku.com"
     export HEROKU_HOST="heroku.com"
-    bash_prompt
+    unset ION_DOMAIN
   fi
+  bash_prompt
 }
 alias db="BUNDLE_GEMFILE=$DOCBROWN_PATH/Gemfile $DOCBROWN_PATH/bin/docbrown"
 function hcl {
