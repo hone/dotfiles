@@ -111,8 +111,7 @@ export PATH=$PATH:$HOME/.clojure/bin/
 # rvm
 if [[ -s "$HOME/.rvm/scripts/rvm" ]] ; then source "$HOME/.rvm/scripts/rvm" ; fi
 
-rvm gemset use heroku_work
-echo `ruby -v`
+# rvm gemset use heroku_work
 
 # rvm prompt
 # http://tammersaleh.com/posts/a-better-rvm-bash-prompt
