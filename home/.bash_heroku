@@ -27,3 +27,7 @@ function coladd {
 function colrem {
   db collaborator:remove $1 $HEROKU_EMAIL
 }
+
+function highest_version() {
+	git remote update; git branch -a | grep '^  remotes/[a-z]\+/v[0-9]\+' | sed 's/^.*v\([0-9]*\)/\1/' | sort -n | tail -n 1
+}
