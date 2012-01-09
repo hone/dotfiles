@@ -71,6 +71,8 @@ esac
 
 # heroku aliases
 source $HOME/.bash_heroku
+# s3 credentials
+source $HOME/.bash_s3
 
 # enable color support of ls and also add handy aliases
 if [ "$TERM" != "dumb" ] && [ -x /usr/bin/dircolors ]; then
